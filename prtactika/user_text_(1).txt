@@ -1,5 +1,0 @@
-python 
-hello 
-world 
-people 
-window 
