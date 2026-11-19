@@ -1,0 +1,314 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>antic — Elegance for Interiors &amp; Exteriors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Varta:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <section class="hero">
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__left">
+          <a href="#" class="logo">antic</a>
+
+          <input type="checkbox" id="menu-toggle" class="menu-toggle">
+          <label for="menu-toggle" class="burger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+          </label>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li><a href="#products" class="nav__link">Products</a></li>
+              <li><a href="#rooms" class="nav__link">Rooms</a></li>
+              <li><a href="#services" class="nav__link">Services</a></li>
+              <li><a href="#inspirations" class="nav__link">Inspirations</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <button type="button" class="chat-btn" aria-label="Contact us">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3C6.48 3 2 6.92 2 11.75C2 14.12 3.08 16.27 4.84 17.85C4.64 19.16 4.02 20.38 3.95 20.51C3.78 20.82 3.84 21.2 4.1 21.44C4.26 21.59 4.47 21.67 4.68 21.67C4.81 21.67 4.94 21.64 5.06 21.58C6.75 20.73 8.17 19.83 8.95 19.3C9.93 19.56 10.95 19.7 12 19.7C17.52 19.7 22 15.78 22 10.95C22 6.12 17.52 3 12 3ZM8 12.25C7.31 12.25 6.75 11.69 6.75 11C6.75 10.31 7.31 9.75 8 9.75C8.69 9.75 9.25 10.31 9.25 11C9.25 11.69 8.69 12.25 8 12.25ZM12 12.25C11.31 12.25 10.75 11.69 10.75 11C10.75 10.31 11.31 9.75 12 9.75C12.69 9.75 13.25 10.31 13.25 11C13.25 11.69 12.69 12.25 12 12.25ZM16 12.25C15.31 12.25 14.75 11.69 14.75 11C14.75 10.31 15.31 9.75 16 9.75C16.69 9.75 17.25 10.31 17.25 11C17.25 11.69 16.69 12.25 16 12.25Z" fill="white"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="container hero__container">
+      <div class="hero__content">
+        <span class="hero__eyebrow">HOME DESIGN</span>
+        <h1 class="hero__title">Elegance for<br>Interiors &amp;<br>Exteriors</h1>
+        <p class="hero__subtitle">
+          We provide everyone with modern, trendy, quality furniture
+        </p>
+        <a href="#rooms" class="scroll-btn" aria-label="Scroll down">
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1.5L8 8.5L15 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <img src="../static/Images/Picture.png" alt="Pendant lamps interior" class="hero__img">
+    </div>
+  </section>
+
+  <main>
+    <section class="rooms" id="rooms">
+      <div class="container">
+        <h2 class="section-title">Find your room</h2>
+
+        <div class="rooms__row">
+          <p class="rooms__lead">
+            Dining room, bedroom, bathroom or office. Find what you need
+          </p>
+
+          <div class="rooms__cards">
+            <a href="#" class="room-card">
+              <div class="room-card__img-box">
+                <img src="../static/Images/Picture (1).png" alt="Bedroom" class="room-card__img">
+              </div>
+              <span class="room-card__badge">New arrivals</span>
+              <h3 class="room-card__title">Bedroom</h3>
+            </a>
+
+            <a href="#" class="room-card">
+              <div class="room-card__img-box">
+                <img src="../static/Images/Picture (2).png" alt="Living room" class="room-card__img">
+              </div>
+              <span class="room-card__badge">New arrivals</span>
+              <h3 class="room-card__title">Living<br>room</h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="rooms__controls">
+          <span class="slider-counter">01 / 04</span>
+          <a href="#" class="arrow-link">
+            Next
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 1L6.5 6L1.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container services__inner">
+        <div class="services__left">
+          <h2 class="section-title">We stay by your side to design your projects</h2>
+          <a href="#" class="arrow-link">
+            Find out more
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 1L6.5 6L1.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-item">
+            <h3 class="service-item__title">Our Advices</h3>
+            <p class="service-item__text">
+              What if you took advantage of this rather special period to rethink your interior? You spend more time at home so you might as well feel good there.
+            </p>
+          </article>
+
+          <article class="service-item">
+            <h3 class="service-item__title">Click and Collect</h3>
+            <p class="service-item__text">
+              Adapted and contactless. Free from € 200 of purchases in stores offering the service.
+            </p>
+          </article>
+
+          <article class="service-item">
+            <h3 class="service-item__title">Conception Service</h3>
+            <p class="service-item__text">
+              Personalized service with an expert advisor for your interior and exterior decoration or layout projects.
+            </p>
+          </article>
+
+          <article class="service-item">
+            <h3 class="service-item__title">Installation Service</h3>
+            <p class="service-item__text">
+              Our furniture packaged in flat packs are designed for easy assembly. But you can call on our partner.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trends" id="inspirations">
+      <div class="container newsletter">
+        <div class="newsletter__info">
+          <h2 class="newsletter__title">Be aware of the latest trends</h2>
+          <p class="newsletter__text">
+            Stay informed of new trends, but also of our various offers.
+          </p>
+          <a href="#" class="arrow-link">
+            Learn more
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 1L6.5 6L1.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <form class="newsletter__form" action="#" method="post">
+          <input type="email" class="newsletter__input" placeholder="email@antic.com" required>
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="inspirations-gallery">
+        <div class="inspirations-gallery__item">
+          <img src="../static/Images/Picture (3).png" alt="Yellow modern chairs">
+        </div>
+        <div class="inspirations-gallery__item">
+          <img src="../static/Images/Picture (4).png" alt="Woven pendant kitchen lamp">
+        </div>
+        <div class="inspirations-gallery__item inspirations-gallery__item--narrow">
+          <img src="../static/Images/Picture (5).png" alt="Minimalist living room">
+        </div>
+      </div>
+
+      <div class="container inspirations-bottom">
+        <h2 class="inspirations-bottom__title">Inspirations</h2>
+        <p class="inspirations-bottom__text">
+          Our experts are keen to stay on top of trends in order to offer you new inspirations for your interior and exterior every day. Remember that to inspire you we have to inspire ourselves and we want to share that with you.
+        </p>
+        <div class="inspirations-bottom__nav">
+          <div class="circle-arrows">
+            <button type="button" class="circle-arrow" aria-label="Previous inspiration">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 1L1.5 6L6.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button type="button" class="circle-arrow" aria-label="Next inspiration">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1L6.5 6L1.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <span class="slider-counter">01 / 05</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="products">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="logo logo--footer">antic</a>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Products</h4>
+          <ul class="footer__list">
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Decoration</a></li>
+            <li><a href="#">Storage</a></li>
+            <li><a href="#">Baby and child</a></li>
+            <li><a href="#">Connected home</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Rooms</h4>
+          <ul class="footer__list">
+            <li><a href="#">Living room</a></li>
+            <li><a href="#">Dining room</a></li>
+            <li><a href="#">Cooked</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Bathroom</a></li>
+            <li><a href="#">Office</a></li>
+            <li><a href="#">Laundry</a></li>
+            <li><a href="#">Garage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__list">
+            <li><a href="#">Click and collect</a></li>
+            <li><a href="#">Conception</a></li>
+            <li><a href="#">Installation</a></li>
+            <li><a href="#">Advices</a></li>
+            <li><a href="#">Gift card</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">About</h4>
+          <ul class="footer__list">
+            <li><a href="#">Our story</a></li>
+            <li><a href="#">Our stores</a></li>
+            <li><a href="#">Our partners</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__planet">
+          <h4 class="footer__heading">We respect our planet</h4>
+          <div class="footer__planet-img">
+            <img src="../static/Images/Picture (6).png" alt="Sustainable interior">
+          </div>
+          <p class="footer__planet-text">
+            We’re taking positive steps to reduce our impact on the planet. For us, that means retailing responsibly.
+          </p>
+          <a href="#" class="arrow-link">
+            Learn more
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 1L6.5 6L1.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__socials">
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="4" fill="#706458"/>
+            <path d="M17.5 25V16.8H20.2L20.6 13.6H17.5V11.6C17.5 10.7 17.8 10 19.1 10H20.7V7.2C20.4 7.2 19.4 7 18.2 7C15.8 7 14.1 8.5 14.1 11.2V13.6H11.4V16.8H14.1V25H17.5Z" fill="#F3EEE8"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Twitter">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="4" fill="#706458"/>
+            <path d="M24 11.1C23.4 11.4 22.8 11.5 22.1 11.6C22.8 11.2 23.3 10.5 23.6 9.8C22.9 10.2 22.2 10.5 21.4 10.6C20.8 10 19.9 9.5 18.9 9.5C17 9.5 15.5 11 15.5 12.9C15.5 13.2 15.5 13.4 15.6 13.7C12.8 13.5 10.3 12.2 8.6 10.1C8.3 10.6 8.1 11.2 8.1 11.8C8.1 13 8.7 14 9.6 14.6C9 14.6 8.5 14.4 8 14.2V14.2C8 15.9 9.2 17.2 10.8 17.6C10.5 17.7 10.2 17.7 9.9 17.7C9.7 17.7 9.5 17.7 9.3 17.6C9.7 19 11 20 12.5 20C11.3 20.9 9.8 21.5 8.2 21.5C7.9 21.5 7.7 21.5 7.4 21.4C8.9 22.4 10.7 23 12.7 23C19 23 22.4 17.8 22.4 13.3C22.4 13.1 22.4 13 22.4 12.8C23.1 12.4 23.6 11.8 24 11.1Z" fill="#F3EEE8"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="LinkedIn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="4" fill="#706458"/>
+            <path d="M11.6 13.3H8.5V23.2H11.6V13.3ZM10.1 8.4C9.1 8.4 8.3 9.2 8.3 10.2C8.3 11.2 9.1 12 10.1 12C11.1 12 11.9 11.2 11.9 10.2C11.9 9.2 11.1 8.4 10.1 8.4ZM23.5 17.6C23.5 14.8 22 13.1 19.6 13.1C18.1 13.1 17.2 13.9 16.8 14.6V13.3H13.8V23.2H16.9V18.1C16.9 16.8 17.2 15.6 18.8 15.6C20.4 15.6 20.4 17 20.4 18.2V23.2H23.5V17.6Z" fill="#F3EEE8"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="4" fill="#706458"/>
+            <path d="M16 11.9C13.7 11.9 11.9 13.7 11.9 16C11.9 18.3 13.7 20.1 16 20.1C18.3 20.1 20.1 18.3 20.1 16C20.1 13.7 18.3 11.9 16 11.9ZM16 18.6C14.6 18.6 13.4 17.4 13.4 16C13.4 14.6 14.6 13.4 16 13.4C17.4 13.4 18.6 14.6 18.6 16C18.6 17.4 17.4 18.6 16 18.6ZM21.2 11.7C21.2 12.2 20.8 12.7 20.2 12.7C19.7 12.7 19.2 12.2 19.2 11.7C19.2 11.2 19.7 10.7 20.2 10.7C20.8 10.7 21.2 11.2 21.2 11.7ZM24 12.7C23.9 11.3 23.6 10.1 22.6 9.1C21.6 8.1 20.4 7.8 19 7.7C17.6 7.6 13.4 7.6 12 7.7C10.6 7.8 9.4 8.1 8.4 9.1C7.4 10.1 7.1 11.3 7 12.7C6.9 14.1 6.9 18.3 7 19.7C7.1 21.1 7.4 22.3 8.4 23.3C9.4 24.3 10.6 24.6 12 24.7C13.4 24.8 17.6 24.8 19 24.7C20.4 24.6 21.6 24.3 22.6 23.3C23.6 22.3 23.9 21.1 24 19.7C24.1 18.3 24.1 14.1 24 12.7ZM22.2 21.1C21.9 21.8 21.3 22.4 20.6 22.7C19.5 23.1 17 23 16 23C15 23 12.5 23.1 11.4 22.7C10.7 22.4 10.1 21.8 9.8 21.1C9.4 20 9.5 17.5 9.5 16.5C9.5 15.5 9.4 13 9.8 11.9C10.1 11.2 10.7 10.6 11.4 10.3C12.5 9.9 15 10 16 10C17 10 19.5 9.9 20.6 10.3C21.3 10.6 21.9 11.2 22.2 11.9C22.6 13 22.5 15.5 22.5 16.5C22.5 17.5 22.6 20 22.2 21.1Z" fill="#F3EEE8"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2021 Agence Dnd</p>
+        <div class="footer__legal">
+          <a href="#">Privacy policy</a>
+          <a href="#">Term of service</a>
+          <a href="#">Language</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
