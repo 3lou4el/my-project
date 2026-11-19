@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <section class="hero" id="plan">
+    <img src="{% static 'Images/garrett-parker-DlkF4-dbCOU-unsplash 1.png' %}" alt="Mountain lake" class="hero__bg">
+
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#" class="logo">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.9219 5.51562C14.7969 1.39062 8.10938 1.39062 3.98438 5.51562C3.39844 6.10156 3.39844 7.03906 3.98438 7.625C4.57031 8.21094 5.50781 8.21094 6.09375 7.625C9.04688 4.67188 13.8594 4.67188 16.8125 7.625C17.3984 8.21094 18.3359 8.21094 18.9219 7.625C19.5078 7.03906 19.5078 6.10156 18.9219 5.51562ZM25.25 11.8438C21.125 7.71875 14.4375 7.71875 10.3125 11.8438C9.72656 12.4297 9.72656 13.3672 10.3125 13.9531C10.8984 14.5391 11.8359 14.5391 12.4219 13.9531C15.375 11 20.1875 11 23.1406 13.9531C23.7266 14.5391 24.6641 14.5391 25.25 13.9531C25.8359 13.3672 25.8359 12.4297 25.25 11.8438ZM21.0312 16.0625C18.6875 13.7188 14.875 13.7188 12.5312 16.0625C11.9453 16.6484 11.9453 17.5859 12.5312 18.1719C13.1172 18.7578 14.0547 18.7578 14.6406 18.1719C15.8125 17 17.75 17 18.9219 18.1719C19.5078 18.7578 20.4453 18.7578 21.0312 18.1719C21.6172 17.5859 21.6172 16.6484 21.0312 16.0625ZM15.7266 20.3984C14.8477 20.3984 14.1445 21.1016 14.1445 21.9805C14.1445 22.8594 14.8477 23.5625 15.7266 23.5625C16.6055 23.5625 17.3086 22.8594 17.3086 21.9805C17.3086 21.1016 16.6055 20.3984 15.7266 20.3984Z" fill="white"/>
+          </svg>
+          <span>Travel Portal</span>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#steps" class="nav__link">How It Works</a></li>
+            <li><a href="#plan" class="nav__link">Plan Your Trip</a></li>
+            <li><a href="#destinations" class="nav__link">Destinations</a></li>
+            <li><a href="#stories" class="nav__link">Travel Stories</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" class="btn btn--login">Login</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">Explore the beauty of the World</h1>
+        <p class="hero__subtitle">
+          Receive personalized recommendations for countries, hotels, activities and more
+        </p>
+
+        <form class="search-bar" action="#" method="get">
+          <input type="text" class="search-bar__input" placeholder="What would you like to do?">
+          <button type="submit" class="btn btn--start">Start Planning</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="steps" id="steps">
+      <div class="container">
+        <h2 class="section-title">3 STEPS TO THE PERFECT TRIP</h2>
+
+        <div class="steps__list">
+          <div class="step-item">
+            <div class="step-item__icon">
+              <svg width="50" height="45" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.75 22.5C33.925 22.5 30 26.425 30 31.25C30 36.075 33.925 40 38.75 40C43.575 40 47.5 36.075 47.5 31.25C47.5 26.425 43.575 22.5 38.75 22.5ZM38.75 36.25C36 36.25 33.75 34 33.75 31.25C33.75 28.5 36 26.25 38.75 26.25C41.5 26.25 43.75 28.5 43.75 31.25C43.75 34 41.5 36.25 38.75 36.25ZM11.25 22.5C6.425 22.5 2.5 26.425 2.5 31.25C2.5 36.075 6.425 40 11.25 40C16.075 40 20 36.075 20 31.25C20 26.425 16.075 22.5 11.25 22.5ZM11.25 36.25C8.5 36.25 6.25 34 6.25 31.25C6.25 28.5 8.5 26.25 11.25 26.25C14 26.25 16.25 28.5 16.25 31.25C16.25 34 14 36.25 11.25 36.25ZM33.75 8.75C35.825 8.75 37.5 7.075 37.5 5C37.5 2.925 35.825 1.25 33.75 1.25C31.675 1.25 30 2.925 30 5C30 7.075 31.675 8.75 33.75 8.75ZM26.25 16.25H35V12.5H28.05L23.15 7.6C22.45 6.9 21.5 6.5 20.5 6.5C19.5 6.5 18.55 6.9 17.85 7.6L11.6 13.85C10.9 14.55 10.5 15.5 10.5 16.5C10.5 17.5 10.9 18.45 11.6 19.15L18.75 26.25V36.25H22.5V24.25L17.15 18.9L22.95 13.1L26.25 16.25Z" fill="white"/>
+              </svg>
+            </div>
+            <p class="step-item__text">Tell us what you want to do</p>
+          </div>
+
+          <div class="step-item">
+            <div class="step-item__icon">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M41.1667 8.66667H39V4.33333H34.6667V8.66667H17.3333V4.33333H13V8.66667H10.8333C8.42833 8.66667 6.52167 10.6167 6.52167 13L6.5 43.3333C6.5 45.7167 8.42833 47.6667 10.8333 47.6667H41.1667C43.55 47.6667 45.5 45.7167 45.5 43.3333V13C45.5 10.6167 43.55 8.66667 41.1667 8.66667ZM41.1667 43.3333H10.8333V19.5H41.1667V43.3333ZM15.1667 23.8333H26V34.6667H15.1667V23.8333Z" fill="white"/>
+              </svg>
+            </div>
+            <p class="step-item__text">Share us preferable dates</p>
+          </div>
+
+          <div class="step-item">
+            <div class="step-item__icon">
+              <svg width="60" height="45" viewBox="0 0 60 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.5 37.5H7.5V42.5H52.5V37.5ZM53.925 19.1C53.375 17.1 51.325 15.925 49.325 16.45L36.05 20L18.8 3.925L13.975 5.2L24.325 23.125L11.9 26.45L6.975 22.6L3.35 23.575L7.9 31.45L9.825 34.775L13.85 33.7L27.125 30.15L37.975 27.25L51.25 23.7C53.275 23.15 54.45 21.1 53.925 19.1Z" fill="white"/>
+              </svg>
+            </div>
+            <p class="step-item__text">We will give you recommendations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations" id="destinations">
+      <h2 class="section-title">POPULAR DESTINATIONS</h2>
+
+      <div class="destinations__slider">
+        <div class="destination-card">
+          <img src="{% static 'Images/Rectangle 23.png' %}" alt="Spain" class="destination-card__img">
+          <span class="destination-card__name">SPAIN</span>
+        </div>
+
+        <div class="destination-card">
+          <img src="{% static 'Images/Rectangle 24.png' %}" alt="Japan" class="destination-card__img">
+          <span class="destination-card__name">JAPAN</span>
+        </div>
+
+        <div class="destination-card">
+          <img src="{% static 'Images/Rectangle 25.png' %}" alt="USA" class="destination-card__img">
+          <span class="destination-card__name">USA</span>
+        </div>
+      </div>
+
+      <div class="destinations__dots">
+        <span class="dot"></span>
+        <span class="dot dot--active"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div class="destinations__action">
+        <button type="button" class="btn btn--icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.6667 20H8.33334M31.6667 20L21.6667 30M31.6667 20L21.6667 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Find More</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="stories-section" id="stories">
+      <h2 class="section-title">TRAVEL STORIES</h2>
+
+      <div class="stories-wrapper">
+        <img src="{% static 'Images/Rectangle 33.png' %}" alt="Travel background" class="stories-wrapper__bg">
+
+        <div class="stories-overlay">
+          <div class="container">
+            <div class="stories__list">
+              <article class="story-card">
+                <img src="{% static 'Images/Rectangle 29.png' %}" alt="10 Photos of Attractive Thailand" class="story-card__img">
+                <div class="story-card__body">
+                  <h3 class="story-card__title">10 Photos of Attractive Thailand</h3>
+                  <p class="story-card__text">
+                    Discover emerald lagoons, limestone cliffs, and quiet wooden boats drifting through hidden bays across southern Thailand. From early sunrise viewpoints to vibrant night markets, every stop brings unforgettable colors and warm hospitality that stay with you long after the trip ends...
+                    <a href="#" class="story-card__link">Read More</a>
+                  </p>
+                </div>
+              </article>
+
+              <article class="story-card">
+                <img src="{% static 'Images/Rectangle 30.png' %}" alt="Canyonlands National Park, Utah" class="story-card__img">
+                <div class="story-card__body">
+                  <h3 class="story-card__title">Canyonlands National Park, Utah</h3>
+                  <p class="story-card__text">
+                    Driving down open desert highways surrounded by towering red rock mesas feels like entering another planet. Explore dramatic overlooks, winding trails carved by ancient rivers, and golden sunset light stretching across endless canyons in the heart of Utah...
+                    <a href="#" class="story-card__link">Read More</a>
+                  </p>
+                </div>
+              </article>
+
+              <article class="story-card">
+                <img src="{% static 'Images/Rectangle 31.png' %}" alt="I left my heart in the Mountains!" class="story-card__img">
+                <div class="story-card__body">
+                  <h3 class="story-card__title">I left my heart in the Mountains!</h3>
+                  <p class="story-card__text">
+                    Crisp alpine air, snow-dusted peaks, and crystal-clear glacial lakes create the ultimate escape from busy city routines. Follow our favorite high-altitude trails, cozy mountain lodges, and peaceful morning reflections above the treeline...
+                    <a href="#" class="story-card__link">Read More</a>
+                  </p>
+                </div>
+              </article>
+
+              <article class="story-card">
+                <img src="{% static 'Images/Rectangle 32.png' %}" alt="The Longest journey in my life!" class="story-card__img">
+                <div class="story-card__body">
+                  <h3 class="story-card__title">The Longest journey in my life!</h3>
+                  <p class="story-card__text">
+                    Packing everything into a vintage camper van and heading out with no strict schedule turned into the adventure of a lifetime. Read about unexpected detours, campfire dinners under desert stars, and the freedom of the open road...
+                    <a href="#" class="story-card__link">Read More</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="stories__action">
+              <button type="button" class="btn btn--icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.6667 20H8.33334M31.6667 20L21.6667 30M31.6667 20L21.6667 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>See More</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container footer__inner">
+            <p class="footer__copy">All Rights Reserved &copy; Travel Portal</p>
+
+            <div class="footer__socials">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="3" width="28" height="28" rx="8" stroke="white" stroke-width="2.4"/>
+                  <circle cx="17" cy="17" r="6.5" stroke="white" stroke-width="2.4"/>
+                  <circle cx="24.5" cy="9.5" r="1.7" fill="white"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2.5" y="6.5" width="29" height="21" rx="6" stroke="white" stroke-width="2.4"/>
+                  <path d="M14.5 12.5L22 17L14.5 21.5V12.5Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31 7.6C29.97 8.06 28.86 8.36 27.7 8.5C28.89 7.79 29.8 6.66 30.23 5.31C29.12 5.97 27.89 6.45 26.58 6.71C25.53 5.59 24.04 4.9 22.39 4.9C19.22 4.9 16.65 7.47 16.65 10.64C16.65 11.09 16.7 11.53 16.8 11.95C12.03 11.71 7.8 9.43 4.97 5.95C4.48 6.8 4.19 7.79 4.19 8.84C4.19 10.83 5.2 12.59 6.74 13.62C5.8 13.59 4.91 13.33 4.14 12.9V12.97C4.14 15.75 6.12 18.07 8.74 18.6C8.26 18.73 7.75 18.8 7.23 18.8C6.86 18.8 6.5 18.76 6.15 18.7C6.88 20.98 9 22.64 11.51 22.69C9.55 24.23 7.08 25.15 4.39 25.15C3.93 25.15 3.47 25.12 3.02 25.07C5.56 26.7 8.58 27.65 11.82 27.65C22.38 27.65 28.15 18.9 28.15 11.32C28.15 11.07 28.14 10.82 28.13 10.58C29.25 9.77 30.23 8.76 31 7.6Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
